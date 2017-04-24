@@ -1,0 +1,5 @@
+
+Dsquid:S1185"(Remove this method to simply inherit it.(ÒÊÏ·8õá¥û®+
+“squid:S1319"rThe type of the "objects" object should be an interface such as "List" rather than the implementation "ArrayList".(£é‚çúÿÿÿÿ8è«”û®+
+Qsquid:S1854"5Remove this useless assignment to local variable "v".(”ú›”8ÛÖ¨û®+
+csquid:UselessImportCheck"5Remove this unused import 'android.widget.ImageView'.(ú¯ëàüÿÿÿÿ8‚£Öû®+

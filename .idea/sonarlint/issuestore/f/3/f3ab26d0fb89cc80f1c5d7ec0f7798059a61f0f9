@@ -1,0 +1,8 @@
+
+asquid:S1871"LThis branch's code block is the same as the block for the branch on line 42.(‰é»
+fsquid:S1871"LThis branch's code block is the same as the block for the branch on line 45.(ù°¿şúÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¶ÆÆ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¶ÆÆ
+Tsquid:S1118":Add a private constructor to hide the implicit public one.(ÁËØÿøÿÿÿÿ
+?squid:S1166"%Either log or rethrow this exception.(¿Šó¡úÿÿÿÿ
+ysquid:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ôô¡Óüÿÿÿÿ

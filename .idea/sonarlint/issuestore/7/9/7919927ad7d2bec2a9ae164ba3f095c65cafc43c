@@ -1,0 +1,11 @@
+
+psquid:UselessImportCheck"IRemove this unused import 'com.damithdev.jsonex.helper.ConnectionHelper'.(¨†éşÿÿÿÿ
+:squid:S1166"%Either log or rethrow this exception.(ï­£Ä
+=squid:S1185"(Remove this method to simply inherit it.(ËĞƒ
+?squid:S1166"%Either log or rethrow this exception.(÷¿­¹ÿÿÿÿÿ
+Bsquid:S1068"-Remove this unused "mActivity" private field.(ïĞÔ’
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(²Õ“ß8‚§“ı®+
+Dsquid:S00108")Either remove or fill this block of code.(÷¿­¹ÿÿÿÿÿ
+Tsquid:UselessImportCheck"2Remove this unused import 'android.os.Parcelable'.(õÃÀ­
+ksquid:MaximumInheritanceDepth"=This class has 11 parents which is greater than 5 authorized.(²Ú±8Úéƒü®+
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

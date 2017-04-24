@@ -1,0 +1,4 @@
+
+…squid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¢ý²—
+Osquid:S1118":Add a private constructor to hide the implicit public one.(í±þ¨
+ˆsquid:S1160"sRefactor this method to throw at most one checked exception instead of: org.json.JSONException, java.io.IOException(¢ý²—
