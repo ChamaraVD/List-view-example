@@ -1,11 +1,15 @@
 package com.damithdev.jsonex;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.damithdev.jsonex.adapter.UserAdapter;
@@ -16,6 +20,7 @@ import com.damithdev.jsonex.services.ScoreService;
 import org.json.JSONException;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
@@ -28,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private Activity mActivity;
     ListView simpleList;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +42,22 @@ public class MainActivity extends AppCompatActivity {
         new AsyncTaskHelp().execute();
 
         simpleList = (ListView)findViewById(R.id.simpleListView);
+
+        simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(MainActivity.this,ProfileActivity.class);
+
+                intent.putExtra("position",  newItems.get(i));
+
+
+                startActivity(intent);
+
+
+            }
+        });
+
+
     }
 
     private class AsyncTaskHelp extends AsyncTask<String,String,String>{
@@ -68,9 +90,10 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
 
-            UserAdapter userAdapter = new UserAdapter(getApplicationContext(),R.layout.item_user,newItems);
+            final UserAdapter userAdapter = new UserAdapter(getApplicationContext(),R.layout.item_user,newItems);
             simpleList.setAdapter(userAdapter);
-            //Log.e(s,"kmsk");
+
+
         }
     }
 

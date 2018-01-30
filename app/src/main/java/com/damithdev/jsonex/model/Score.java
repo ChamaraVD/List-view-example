@@ -1,10 +1,12 @@
 package com.damithdev.jsonex.model;
 
+import java.io.Serializable;
+
 /**
  * Created by Damith on 3/5/2017.
  */
 
-public class Score {
+public class Score implements Serializable{
 
     private String id;
     private String title;

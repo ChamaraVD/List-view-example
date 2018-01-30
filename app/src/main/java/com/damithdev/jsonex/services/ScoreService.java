@@ -29,7 +29,8 @@ public class ScoreService {
             JSONObject jsonObj = jsonArray.getJSONObject(i);
 
             Score score = new Score(jsonObj.getString("id"),
-                    jsonObj.getString("title")
+                    jsonObj.getString("title"),
+                    jsonObj.getString("newsType")
                     );
 
 

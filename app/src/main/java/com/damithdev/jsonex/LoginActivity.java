@@ -38,11 +38,15 @@ public class LoginActivity extends AppCompatActivity {
         passText = (EditText) findViewById(R.id.pass);
         logButton = (Button) findViewById(R.id.logBtn);
 
+        emailText.setText("damith@gmail.com");
+        passText.setText("123456");
+
 
 
         logButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 emailString = emailText.getText().toString();
                 passString = passText.getText().toString();
                 new LoginReq().execute();
