@@ -20,7 +20,7 @@ public class ScoreService {
 
         ArrayList<Score> items = new ArrayList<>();
 
-        JSONObject jsonObject = new JSONObject(ConnectionHelper.get("http://www.adaderana.lk/app_services/androidV2/V2Test/android_news_service_main.php?lan=english&q=news&id=e4"));
+        JSONObject jsonObject = new JSONObject(ConnectionHelper.get("http://www.adaderana.lk/app_services/androidV2/LIVE/V2.0.0.1/android_news_service_main.php?lan=english&q=news&id=e5"));
 
         JSONArray jsonArray = jsonObject.getJSONArray("TopNewsGivenCat");
 
